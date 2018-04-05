@@ -6,6 +6,7 @@ import Feed from '../screens/Feed'
 import Settings from '../screens/Settings'
 import UserDetail from '../screens/UserDetail'
 import Me from '../screens/Me'
+import Login from '../screens/Login'
 
 export const FeedStack = StackNavigator({
   Feed: {
@@ -23,6 +24,13 @@ export const FeedStack = StackNavigator({
 })
 
 export const Tabs = TabNavigator({
+  Login: {
+    screen: Login,
+    navigationOptions: {
+      tabBarLabel: 'Login',
+      tabBarIcon: ({ tintColor }) => <Icon name="login" size={35} color={tintColor} />,
+    },
+  },
   Feed: {
     screen: FeedStack,
     navigationOptions: {

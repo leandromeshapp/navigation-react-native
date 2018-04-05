@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { ScrollView, View, Dimensions, Modal, Image, StyleSheet, Text, TouchableOpacity  } from 'react-native'
-import { Tile, List, ListItem, Button, ListView} from 'react-native-elements'
+import { Tile, List, ListItem, Button } from 'react-native-elements'
 import { RkModalImg } from 'react-native-ui-kitten'
 import { me } from '../config/data'
 
